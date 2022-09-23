@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: block;
+            background-color: pink;
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engr. Farman Ali | Get Method</h1>
+    <div class="test abc" id="box">
+        <h2>Test Box</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur <span>Engr.Farman ali goryah Virtual University of Pakistan</span> adipisicing elit. Reprehenderit, vero!</p>
+        
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            //  var a = $('#box').html();
+            //  console.log(a);
+            //  var a = $('body').html();
+            //  console.log(a);
+            //  var a = $('#box').text();
+            //  console.log(a);
+             var a = $('#box').attr('class');
+             console.log(a);
+        });
+    </script>
+</body>
+</html>

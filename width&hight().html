@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrappAll</title>
+    <script type="text/javascript" src="js/jquery.js">  </script>
+
+    <style>
+        #box{
+            border: 15px solid black;
+            padding: 30px;
+            background-color: pink;
+            display: block;
+            width: 400px;
+            height: 200px;
+            margin: 50px;
+        }
+        #test{
+            background-color: brown;
+            border: 3px dotted black;
+        }
+      
+      
+      
+        
+    </style>
+</head>
+<body>
+    <h1>Engr. Farman Ali Goryah|Width And Height method in jquery</h1>
+    <div id="box" >
+        <h2>This is first heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non deleniti  ipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+        </div>
+
+        <br><br>
+        
+     
+        <br><br>
+        <button id="Width">Width</button>
+        <button id="height">Height</button>
+
+        <script>
+            $(document).ready(function(){
+                $("#Width").click(function(){
+                console.log("Total width of content inside the div : " + $("#box").width());
+              console.log("total width of div : " + $("#box").innerWidth());
+              console.log("total width of div + border : " + $("#box").outerWidth());
+              console.log("toatl width of div+border+margin: " + $("#box").outerWidth(true));
+             });
+             $("#height").click(function(){
+                console.log("Total height of content inside the div : " + $("#box").width());
+              console.log("total height of div : " + $("#box").innerWidth());
+              console.log("total height of div + border : " + $("#box").outerWidth());
+              console.log("toatl height of div+border+margin: " + $("#box").outerWidth(true));
+             });
+              
+            });
+        </script>
+      
+</body>
+</html>

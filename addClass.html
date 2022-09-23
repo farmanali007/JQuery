@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <script type="text/javascript" src="js/jquery.js">  </script>
+
+    <style>
+        #box{
+     
+            padding: 20px;
+        }
+      
+        .first{
+            color: aqua;
+            background-color: brown;
+        }
+        .second{
+            border: 4px solid red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engr. Farman Ali Goryah| AddClass with jquery</h1>
+    <div id="box" class="test">
+        <h2>This is first heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non deleniti ipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+        </div>
+        <br><br>
+        <button id="addClass">AddClass</button>
+        <button id="removeClass">removeClass</button>
+        <button id="toggleClass">toggleClass</button>
+        <script>
+            $(document).ready(function(){
+                $("#addClass").click(function(){
+                    $("#box").addClass('first');
+                });
+                $("#removeClass").click(function(){
+                    $("#box").removeClass('first');
+                });
+                $("#toggleClass").click(function(){
+                    $("#box").toggleClass('first');
+                });
+            });
+        </script>
+     
+</body>
+</html>

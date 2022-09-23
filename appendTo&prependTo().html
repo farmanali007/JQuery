@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <script type="text/javascript" src="js/jquery.js">  </script>
+
+    <style>
+        #box{
+            border: 2px solid black;
+            padding: 20px;
+        }
+      
+      
+        
+    </style>
+</head>
+<body>
+    <h1>Engr. Farman Ali Goryah| appendTo and prependTo method in jquery</h1>
+    <!-- <div id="box" class="test">
+        <h2>This is first heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non deleniti <span>Engr. Farman Ali</span> ipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+        </div> -->
+        <ol>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+            <li>list item</li>
+        </ol>
+        <br><br>
+        <button id="appendTo">appendTo</button>
+        <button id="prependTo">prependTo</button>
+        <script>
+            $(document).ready(function(){
+               $("#appendTo").click(function(){
+                $("<li>list items New</li>").appendTo("ol");
+               });
+               $("#prependTo").click(function(){
+                $("<li>New list items </li>").prependTo("ol");
+               });
+              
+            });
+        </script>
+      
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <script type="text/javascript" src="js/jquery.js">  </script>
+
+    <style>
+        #box{
+            border: 2px solid black;
+            padding: 20px;
+            background-color: pink;
+        }
+        
+      
+      
+        
+    </style>
+</head>
+<body>
+    <h1>Engr. Farman Ali Goryah| replaceAll and replaceWith method in jquery</h1>
+    <div id="box" class="test">
+        <h2>This is first heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non deleniti <span>Engr. Farman Ali</span> ipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non delenitiipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non deleniti  ipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+        </div>
+
+        <br><br>
+        
+     
+        <br><br>
+        <button id="replace">replace</button>
+
+        <script>
+            $(document).ready(function(){
+             $("#replace").click(function(){
+            //    $("#box p:first").replaceWith("Engr. Farman Ali");
+            //    $("#box p:first").replaceWith("<h3>Engr. Farman Ali</h3>");
+            $("<h3>Engr. Farman Ali </h3>").replaceAll("#box p");
+             });
+              
+            });
+        </script>
+      
+</body>
+</html>

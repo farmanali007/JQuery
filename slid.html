@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+    <script type="text/javascript" src="js/jquery.js">  </script>
+
+    <style>
+        #box{
+            border: 2px solid black;
+            background-color: pink;
+            padding: 20px;
+        }
+      
+      
+        
+    </style>
+</head>
+<body>
+    <h1>Engr. Farman Ali Goryah| Slide's method in jquery</h1>
+    <div id="box" class="test">
+        <h2>This is first heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non deleniti <span>Engr. Farman Ali</span> ipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+        </div>
+        <br><br>
+        <button id="slideUp">slideUp</button>
+        <button id="slideDown">slideDown</button>
+        <button id="slideToggle">slideToggle</button>
+        <script>
+            $(document).ready(function(){
+            $("#slideUp").click(function(){
+                $("#box").slideUp(3000);
+            });
+            $("#slideDown").click(function(){
+                $("#box").slideDown(3000);
+            });
+            $("#slideToggle").click(function(){
+                $("#box").slideToggle();
+            });
+          
+              
+            });
+        </script>
+      
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade</title>
+    <script type="text/javascript" src="js/jquery.js">  </script>
+
+    <style>
+        #box{
+            border: 2px solid black;
+            background-color: pink;
+            padding: 20px;
+        }
+      
+      
+        
+    </style>
+</head>
+<body>
+    <h1>Engr. Farman Ali Goryah| Fade's method in jquery</h1>
+    <div id="box" class="test">
+        <h2>This is first heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non deleniti <span>Engr. Farman Ali</span> ipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+        </div>
+        <br><br>
+        <button id="fadeIn">fadeIn</button>
+        <button id="fadeOut">fadeOut</button>
+        <button id="fadeToggle">fadeToggle</button>
+        <button id="fadeTo">fadeTo</button>
+        <script>
+            $(document).ready(function(){
+            $("#fadeOut").click(function(){
+                $("#box").fadeOut("slow");
+            });
+            $("#fadeIn").click(function(){
+                $("#box").fadeIn("slow");
+            });
+            $("#fadeToggle").click(function(){
+                $("#box").fadeToggle("slow");
+            });
+            $("#fadeTo").click(function(){
+                $("#box").fadeTo("slow",0.5);
+            });
+              
+            });
+        </script>
+      
+</body>
+</html>

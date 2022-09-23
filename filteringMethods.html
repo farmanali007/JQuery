@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering</title>
+    <style>
+        #first{
+            background-color: pink;
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        #second{
+            background-color: pink;
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, fuga!</p><br>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <br><br>
+    <ul>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li class="li">List Items</li>
+    </ul>
+    <br><br>
+    <div id="second">
+        <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, fuga!</p><br>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('p').first().css('background-color', 'red');
+            $('p').last().css('background-color', 'red');
+            $('ul li').last().css('background-color', 'gold');
+            $('ul li').eq(3).css('background-color', 'blue');
+            $('p').filter('.test').css('background-color', 'brown');
+            // $('ul li').not('.li').css('font-size', '20px');
+            $('ul li').slice(2, 4).css('font-size', '20px');
+        });
+    </script>
+</body>
+</html>

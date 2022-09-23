@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <script type="text/javascript" src="js/jquery.js">  </script>
+    <link rel="stylesheet" href="css/selectors.css">
+</head>
+<body>
+    <h1>Engr. Farman Ali Goryah| Jquery selectors</h1>
+    <div id="box" class="test">
+        <h2>This is first heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, pariatur. Tenetur iusto facilis delectus non deleniti ipsum, repellat voluptate eum rem, nobis placeat voluptatem voluptates voluptatum nesciunt a ratione doloremque.</p>
+    </div>
+        <ul id="list">
+           <li>PHP</li>
+           <li class="test">javascript</li>
+           <li>Java</li>
+           <li class="test">Python</li>
+           <li>pearl</li>
+           <li class="test">c++</li>
+           <li>ruby</li>
+           <li class="test">dart</li>
+           <li>Go</li>
+           <li class="test">kotlin</li>
+           <li>c-langauge</li>
+           <li class="test">c#</li>
+        </ul>
+        <script>
+            $(document).ready(function(){
+                $("#list").css("font-size", "50px");
+                $("li:eq(2)").css("border", "2px solid red");
+                $(".test").css("background-color", "pink");
+                $("li:first-child").css("border", "2px solid green");
+                $("li:last-child").css("border", "2px solid yellow");
+                $("li:gt(4)").css("background-color", "red");
+                // $("*").css("color", "blue");
+            });
+        </script>
+</body>
+</html>

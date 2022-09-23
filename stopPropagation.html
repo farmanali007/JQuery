@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: rgb(89, 190, 190);
+            border: 2px solid black;
+            width: 400px;
+            height: 200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Engr. Farman Ali </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dignissimos, esse perspiciatis tempora delectus dolore neque molestiae deleniti aspernatur fuga.</p>
+        <button>button</button>
+    </div>
+    <h2></h2>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+           $(".box").click(function(event){
+            // event.stopPropagation();
+            alert("div Element is clicked");
+           });
+           $("h1").click(function(event){
+            event.stopPropagation();
+            alert("h1 Element is clicked");
+           });
+           $("p").click(function(event){
+            // event.stopPropagation();
+            alert("p Element is clicked");
+           });
+           $("button").click(function(event){
+            event.stopPropagation();
+            alert("button Element is clicked");
+            
+           });
+        });
+    </script>
+</body>
+</html>
